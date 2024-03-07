@@ -16,6 +16,9 @@ h1{
 }
 #tecnologias {
     text-align: center;
+    justify-content: center;
+    border: 2px solid red;
+    height: 200px ;
 }
 
 #Actividades {
@@ -23,6 +26,20 @@ h1{
     text-align: center;
     flex-direction: column;
     border: 5px solid greenyellow;
+}
+#Actividades div{
+    display: flex;
+    flex-direction: column;
+}
+.divImg {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 170px;
+}
+#tecnologias{
+    display: flex;
+    
 }
 #Actividades span{
     display: block;
@@ -43,9 +60,12 @@ input{
 #inputDescripcion {
     border-radius: 10px;
     border:  1px solid blue;
-    height: 250px;
+    height: 150px;
 }
 #inputImagen{
     border-radius: 10px;
     border:  1px solid blue;
+}
+#Actividades{
+   
 }
