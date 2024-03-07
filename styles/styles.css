@@ -1,0 +1,42 @@
+@font-face{
+    font-family: Exan;
+    src: url(fonts/Exan.ttf);
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-family: Exan;
+}
+h2{
+    display: flex;
+
+}
+#divImgNombre{
+    display: flex;
+}
+
+#Actividades {
+    border: 5px solid greenyellow;
+}
+input{
+    background-color: black;
+    color: gray;
+}
+#inputActividad{
+    border:  5px solid red;
+
+}
+#inputDescripcion {
+    border:  5px solid red;
+}
+#inputImagen{
+    border:  5px solid red;
+
+}

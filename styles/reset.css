@@ -1,0 +1,79 @@
+/* Reset CSS para tu página web */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove underline on links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default styles for form elements */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Remove border and outline on active elements */
+button,
+input,
+select,
+textarea {
+  outline: none;
+}
+
+/* Clear floated elements */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive media */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* End Reset CSS */
