@@ -9,10 +9,15 @@ h1{
 }
 #sobreMi div{
     color: rgba(26, 216, 220, 0.967);
-
+    font-size: 20px;
 }
-#divImgNombre{
-    display: flex;
+span {
+    border: 2px solid linear-gradient(to bottom, #033CFF, #8BA4F9);
+    border-radius: 10px ;
+    background: linear-gradient(to bottom, #033CFF, #8BA4F9);
+    -webkit-background-clip: text; /* Propiedad específica de WebKit para clipar el fondo al texto */
+    color: transparent; /* Hace que el texto sea transparente */
+    
 }
 #tecnologias {
     text-align: center;
@@ -36,6 +41,13 @@ h1{
     flex-direction: column;
     height: 170px;
     width: 170px;
+    margin-left: 10px;
+    transition: all 1s;    
+}
+.divImg:hover{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 8px;
 }
 #tecnologias{
     display: flex;
