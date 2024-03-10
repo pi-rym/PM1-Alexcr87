@@ -11,13 +11,12 @@ h1{
     color: rgba(26, 216, 220, 0.967);
     font-size: 20px;
 }
+
 span {
-    border: 2px solid linear-gradient(to bottom, #033CFF, #8BA4F9);
-    border-radius: 10px ;
+    display: inline-block;
     background: linear-gradient(to bottom, #033CFF, #8BA4F9);
-    -webkit-background-clip: text; /* Propiedad específica de WebKit para clipar el fondo al texto */
-    color: transparent; /* Hace que el texto sea transparente */
-    
+    background-clip: text; /* Propiedad estándar para clipar el fondo al texto */
+    color: transparent;
 }
 #tecnologias {
     text-align: center;
