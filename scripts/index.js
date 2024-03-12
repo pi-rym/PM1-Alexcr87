@@ -1,3 +1,8 @@
+function borrarValor(elemento) {
+    elemento.value = ''; // Borra el valor al hacer clic
+}
+
+
 class Activity{
     constructor(id, title, description, imgUrl) {
         this.id = id;
@@ -19,14 +24,11 @@ class Repository {
         const nuevaActividad = new Activity(id,title,description,imgUrl);
         this.activities.push(nuevaActividad)
     }
-    /* deleteActivity(id){
+    deleteActivity(id){
         this.activities =this.activities.filter((Activity) => Activity.id !==id)
-    } */
+    } 
 }
-/* function borrarValor(input) {
-    input.value = ''; // Borra el valor al hacer clic
-} */
 const repository = new Repository();
-repository.createActivity("musica", "buena", "www")
-repository.createActivity("asdasd", "bu12312312ena", "wwasfgsdgw")
-console.log(repository);
+repository.createActivity(this.id,"musica", "buena", "www")
+repository.createActivity(this.id,"asdasd", "bu12312312ena", "wwasfgsdgw")
+console.log(repository.getAllActivities())
