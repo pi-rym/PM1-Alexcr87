@@ -42,11 +42,20 @@
                     <textarea rows="1" id="textareaDescripcion" onclick="borrarValor(this)">Descripción</textarea>
                     <input type="text" value="Url de Imagen" id="inputImagen" onclick="borrarValor(this)">
                 </div>
-                <button> Agregar </button>
+                <button id="agregar"> Agregar </button>
             </section>
         </article>
     </section>
 </main>
+<script>
+    const agregar = document.getElementById("agregar");
+
+    const cb = () => {
+        const nuevoDiv = document.createElement("div");
+        console.log(nuevoDiv)
+    }
+    agregar.addEventListener("click", cb)
+</script>
 </body>
     <script src="scripts/index.js"></script>
 </html>
