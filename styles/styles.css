@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@keyframes changeColor {
+    0% {
+        border-color: red; /* Color inicial */
+    }
+    25% {
+        border-color: blue; /* Color después de 25% de la animación */
+    }
+    50% {
+        border-color: green; /* Color después de 50% de la animación */
+    }
+    75% {
+        border-color: yellow; /* Color después de 75% de la animación */
+    }
+    100% {
+        border-color: red; /* Color final, vuelta al inicio */
+    }
+}
 
 body {
     color: white;
@@ -12,19 +29,16 @@ h1{
     justify-content: center;
     font-size: 70px;
 }
-p{
+#sobreMi {
     border: 2px solid gray;
     border-radius: 10px;
     background-color: black;
     opacity: 0.7;
-    margin-top: -10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     font-size: 20px;
     max-width: 800px;
-    margin-left: 20%;
+    margin: 0 auto;
     margin-bottom: 10px;
+    text-align: center;
 }
 h2{
     display: flex;
@@ -44,8 +58,9 @@ button{
 }
 button:hover{
     color: rgb(0, 255, 0);
-    transition: color 2.5s;
-
+    border: 3px solid;
+    border-color: rgb(0, 255, 0);
+    transition: color 2.5s, border-color 2.5s;
 }
 input{
     color: white;
@@ -72,17 +87,21 @@ span {
     height: auto;
     width: 150px;
     margin-left: 10px;
-    transition: all 1s;
     border-radius: 8px;
     background-color: black;
     opacity: 0.7;
+    transition: all 1.5s;
+
 }
 .divImg:hover{
     cursor: pointer;
+    border: 2px solid;
     border-radius: 8px;
     transform: scale(1.5);
     opacity: 1;
-    transition: opacity 1.5s;
+    transition: all 1.5s;
+    animation: changeColor 3s linear infinite;
+    filter: blur(0px);
 }
 #tecnologias{
     display: flex;
@@ -115,4 +134,12 @@ span {
 #inputImagen{
     border-radius: 10px;
     background-color: black;
+}
+
+#prueba{
+    border: 2px solid red;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+
 }

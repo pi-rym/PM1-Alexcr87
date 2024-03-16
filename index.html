@@ -11,11 +11,11 @@
     <header>
     </header>
 <main>
-    <section id="sobreMi">
+    <section>
             <h1>¡BIENVENIDO!</h1>
-            <p>
+            <div id="sobreMi">
                 Mi nombre es Christian Rugna, cuento con estudios terciarios en analisis de sistema y programación orientada a objetos y actualmente me encuentro cursando el bootcamp de Soy Henry para ampliar mis conocimientos y poder convertirme en desarrollador Backend.
-            </p>
+            </div>
     </section>        
     <section>
         <div  id="tecnologias">
@@ -38,14 +38,16 @@
             <h2> Mis Actividades Favoritas</h2>
             <section>
                 <div>
-                    <input type="text" value="Nombre de la Actividad" id="inputActividad" onclick="borrarValor(this)">
-                    <textarea rows="1" id="textareaDescripcion" onclick="borrarValor(this)">Descripción</textarea>
-                    <input type="text" value="Url de Imagen" id="inputImagen" onclick="borrarValor(this)">
+                    <input type="text" placeholder="Nombre de la Actividad" id="inputActividad" onclick="borrarValor(this)">
+                    <textarea rows="1" placeholder="Descripción" id="textareaDescripcion" onclick="borrarValor(this)"></textarea>
+                    <input type="text" placeholder="Url de Imagen" id="inputImagen" onclick="borrarValor(this)">
                 </div>
                 <button id="agregar"> Agregar </button>
             </section>
         </article>
     </section>
+    <Section id="contenedor">
+    </Section>
 </main>
 </body>
     <script src="scripts/index.js"></script>

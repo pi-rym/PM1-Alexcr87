@@ -26,21 +26,51 @@ class Repository {
         this.activities =this.activities.filter((Activity) => Activity.id !==id)
     } 
 }
+const repositorio = new Repository()
+
+function creaateHtmlActivity(activity){
+    const{title, description, imgUrl} = activity
+    const htmlTitle = document.createElement("p")
+    htmlTitle.innerHTML = title
+    htmlTitle.classList.add("prueba")
+
+    const htmlDescription = document.createElement("div")
+    htmlDescription.innerHTML = description
+    htmlTitle.classList.add("prueba")
+    
+    const htmlImg= document.createElement("img")
+    htmlImg.src = imgUrl
+    htmlTitle.classList.add("prueba")
+}
 function copiar(){
+    const inputActividad = document.getElementById("inputActividad");               // getElementById es para seleccionar un elemento del DOM
+    const textareaDescripcion = document.getElementById("textareaDescripcion");
+    const inputImagen = document.getElementById("inputImagen");
     title = inputActividad.value;
     description = textareaDescripcion.value;
     imgUrl = inputImagen.value;
-    const repositorio = new Repository()
     repositorio.createActivity(title, description, imgUrl)
-    inputActividad.value = "Nombre de la Actividad";
-    textareaDescripcion.value = "Descripción";
-    inputImagen.value = "Url de Imagen";
     console.log(repositorio)
+    /*creaateHtmlActivity()*/
+    const htmlTitle = document.createElement("p")
+    htmlTitle.innerHTML = title
+    htmlTitle.classList.add("prueba")
+
+    const htmlDescription = document.createElement("div")
+    htmlDescription.innerHTML = description
+    htmlDescription.classList.add("prueba")
+    
+    const htmlImg= document.createElement("img")
+    htmlImg.src = imgUrl
+    htmlImg.classList.add("prueba")
+
+    const contenedor = document.getElementById("contenedor")
+    contenedor.appendChild(htmlTitle)
+    contenedor.appendChild(htmlDescription)
+    contenedor.appendChild(htmlImg)
 }
 
-const inputActividad = document.getElementById("inputActividad");               // getElementById es para seleccionar un elemento del DOM
-const textareaDescripcion = document.getElementById("textareaDescripcion");
-const inputImagen = document.getElementById("inputImagen");
+
 const agregar = document.getElementById("agregar");
 agregar.addEventListener("click",copiar)
 
