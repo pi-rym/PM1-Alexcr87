@@ -51,23 +51,28 @@ function copiar(){
     imgUrl = inputImagen.value;
     repositorio.createActivity(title, description, imgUrl)
     console.log(repositorio)
-    /*creaateHtmlActivity()*/
+
+    const divContenedor = document.createElement("div");
+    divContenedor.classList.add("nuevoDiv");
+
     const htmlTitle = document.createElement("p")
     htmlTitle.innerHTML = title
-    htmlTitle.classList.add("prueba")
+    htmlTitle.classList.add("nuevaActividad")
+    divContenedor.appendChild(htmlTitle)
 
-    const htmlDescription = document.createElement("div")
-    htmlDescription.innerHTML = description
-    htmlDescription.classList.add("prueba")
     
     const htmlImg= document.createElement("img")
     htmlImg.src = imgUrl
-    htmlImg.classList.add("prueba")
+    htmlImg.classList.add("img-container")
+    divContenedor.appendChild(htmlImg)
+    
+    const htmlDescription = document.createElement("p")
+    htmlDescription.innerHTML = description
+    htmlDescription.classList.add("nuevaActividad")
+    divContenedor.appendChild(htmlDescription)
 
     const contenedor = document.getElementById("contenedor")
-    contenedor.appendChild(htmlTitle)
-    contenedor.appendChild(htmlDescription)
-    contenedor.appendChild(htmlImg)
+    contenedor.appendChild(divContenedor)
 }
 
 
