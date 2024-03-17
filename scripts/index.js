@@ -28,20 +28,6 @@ class Repository {
 }
 const repositorio = new Repository()
 
-function creaateHtmlActivity(activity){
-    const{title, description, imgUrl} = activity
-    const htmlTitle = document.createElement("p")
-    htmlTitle.innerHTML = title
-    htmlTitle.classList.add("prueba")
-
-    const htmlDescription = document.createElement("div")
-    htmlDescription.innerHTML = description
-    htmlTitle.classList.add("prueba")
-    
-    const htmlImg= document.createElement("img")
-    htmlImg.src = imgUrl
-    htmlTitle.classList.add("prueba")
-}
 function copiar(){
     const inputActividad = document.getElementById("inputActividad");               // getElementById es para seleccionar un elemento del DOM
     const textareaDescripcion = document.getElementById("textareaDescripcion");
@@ -50,7 +36,6 @@ function copiar(){
     description = textareaDescripcion.value;
     imgUrl = inputImagen.value;
     repositorio.createActivity(title, description, imgUrl)
-    console.log(repositorio)
 
     const divContenedor = document.createElement("div");
     divContenedor.classList.add("nuevoDiv");
