@@ -1,5 +1,7 @@
-function borrarValor(elemento) {
-    elemento.value = ''; // Borra el valor al hacer clic
+function borrarValor() {
+    inputActividad.value = ""
+    textareaDescripcion.value = ""
+    inputImagen.value = "" 
 }
 class Activity{
     constructor(id, title, description, imgUrl) {
@@ -43,6 +45,7 @@ function handlerButton(){
     }
     repositorio.createActivity(titleValue, descriptionValue, imgValue)
     console.log(repositorio.activities)
+    borrarValor()
     convertAllActivities()
 }
 
@@ -83,7 +86,8 @@ function createHTMLActivity(activity){
     
     const htmlbutton = document.createElement("button")
     htmlbutton.dataset.id = id
-    htmlbutton.innerHTML = "Borrar"
+    htmlbutton.innerHTML = "Eliminar"
+    htmlbutton.className = "buttonBorrar"
     divContenedor.appendChild(htmlbutton)
     htmlbutton.addEventListener("click", borrarActividad)
     
