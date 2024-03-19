@@ -5,10 +5,10 @@ function borrarValor() {
 }
 class Activity{
     constructor(id, title, description, imgUrl) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.imgUrl = imgUrl;
+        this.id = id
+        this.title = title
+        this.description = description
+        this.imgUrl = imgUrl
     }
 }
 class Repository {
@@ -21,7 +21,7 @@ class Repository {
     }
     createActivity(title, description, imgUrl){
         const id = ++this.id     //! el primer + aumenta y el segundo + asigna si lo pongo asi = this.id++  primero asigna y despues aumenta
-        const activity = new Activity(id, title, description, imgUrl);
+        const activity = new Activity(id, title, description, imgUrl)
         this.activities.push(activity)
     }
     deleteActivity(id){
@@ -31,8 +31,8 @@ class Repository {
 const repositorio = new Repository()
 
 function handlerButton(){
-    const inputActividad = document.getElementById("inputActividad");               // getElementById es para seleccionar un elemento del DOM
-    const textareaDescripcion = document.getElementById("textareaDescripcion");
+    const inputActividad = document.getElementById("inputActividad")              // getElementById es para seleccionar un elemento del DOM
+    const textareaDescripcion = document.getElementById("textareaDescripcion")
     const inputImagen = document.getElementById("inputImagen");
     
     const titleValue = inputActividad.value
@@ -99,8 +99,8 @@ agregar.addEventListener("click",handlerButton)
 
 function borrarActividad(event) {
     const id = event.target.dataset.id
-    repositorio.deleteActivity(parseInt(id));
-    convertAllActivities();
+    repositorio.deleteActivity(parseInt(id))
+    convertAllActivities()
 }
 
 
