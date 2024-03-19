@@ -102,7 +102,10 @@ function borrarActividad(event) {
     repositorio.deleteActivity(parseInt(id))
     convertAllActivities()
 }
-
+module.export ={
+    Activity,
+    Repository,
+};
 
 
 
