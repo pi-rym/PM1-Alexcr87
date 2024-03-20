@@ -29,7 +29,7 @@ h1{
     justify-content: center;
     font-size: 70px;
 }
-#sobreMi {
+#sobreMiid {
     border: 2px solid gray;
     border-radius: 10px;
     background-color: black;
@@ -76,7 +76,8 @@ span {
     color: transparent;
 }
 
-#tecnologias {
+#misTecnologiasFavoritas {
+    display: flex;
     text-align: center;
     justify-content: center;
     height: 200px ;
@@ -103,15 +104,13 @@ span {
     transition: all 1.5s;
     animation: changeColor 3s linear infinite;
 }
-#tecnologias{
-    display: flex;
-}
-#Actividades section{
+
+#misActividadesFavoritas section{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-#Actividades div {
+#misActividadesFavoritas div {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -130,6 +129,7 @@ span {
     background-color: black;
     margin-top: 5px;
     margin-bottom: 5px;
+    resize: none;
 }
 #inputImagen{
     border-radius: 10px;
@@ -177,6 +177,8 @@ span {
     justify-content: center;
     text-align: center;
     font-size: 20px;
+    padding: auto;
+    box-sizing: border-box;
 }
 .buttonBorrar{
     display: block;

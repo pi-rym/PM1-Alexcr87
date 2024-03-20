@@ -52,7 +52,7 @@ function createHTMLActivity(activity){
     htmlImg.classList.add("img-container")
     divContenedor.appendChild(htmlImg)
     
-    const htmlDescription = document.createElement("p")
+    const htmlDescription = document.createElement("div")
     htmlDescription.innerHTML = description
     htmlDescription.classList.add("nuevaActividad")
     divContenedor.appendChild(htmlDescription)
