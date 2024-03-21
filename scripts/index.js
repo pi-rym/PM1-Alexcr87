@@ -6,7 +6,8 @@ function borrarValor() {
 
 const repositorio = new Repository()
 
-function handlerButton(){
+function handlerButton(event){
+    event.preventDefault()
     const inputActividad = document.getElementById("inputActividad")              // getElementById es para seleccionar un elemento del DOM
     const textareaDescripcion = document.getElementById("textareaDescripcion")
     const inputImagen = document.getElementById("inputImagen");
